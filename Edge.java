@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Edge{
 	private Node v1;
 	private Node v2;
@@ -17,7 +15,7 @@ public class Edge{
 	public Node getV2(){
 		return v2;
 	}
-	public int getWeight(){
+	public getWeight(){
 		return weight;
 	}
 
@@ -28,11 +26,11 @@ public class Edge{
 		v2=v;
 	}
 	public void setWeight(int w){
-		weight=w;
+		weight=w
 	}
 
-	public Node getPair(Node v){
-		if (v.getName().equals(v1.getName())){
+	public Node findPair(Node v){
+		if (v==v1){
 			return v2;
 		}
 		else{
@@ -40,4 +38,4 @@ public class Edge{
 		}
 	}
 
-}
+	
